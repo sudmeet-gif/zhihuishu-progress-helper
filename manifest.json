@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "智慧树资源进度助手（本地版）",
+  "version": "0.3.1",
+  "description": "在本人登录的智慧树课程页原速播放视频、点开课件并检查资源完成状态。",
+  "permissions": ["storage"],
+  "action": {"default_title": "智慧树资源进度助手", "default_popup": "popup.html"},
+  "content_scripts": [{
+    "matches": [
+      "https://onlineweb.zhihuishu.com/*",
+      "https://studyh5.zhihuishu.com/*",
+      "https://ai-smart-course-student-pro.zhihuishu.com/*",
+      "https://hike-teaching-center.polymas.com/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_idle",
+    "all_frames": true
+  }]
+}
