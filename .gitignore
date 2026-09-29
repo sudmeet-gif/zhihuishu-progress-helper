@@ -1,0 +1,15 @@
+# Local login and debugging data must stay off GitHub.
+work/
+outputs/
+*profile*/
+*.har
+*.log
+*.png
+*.jpg
+*.zip
+.env
+.env.*
+credentials*
+secrets*
+__pycache__/
+.venv/
